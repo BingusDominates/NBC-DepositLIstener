@@ -1,5 +1,5 @@
 ####################
-# Loading packages #
+# LOADING PACKAGES #
 ####################
 from web3 import Web3
 
@@ -23,10 +23,10 @@ print('=========================================================================
 print()
 
 #######################
-# Declaring constants #
+# DECLARING CONSTANTS #
 #######################
 
-## Your settings are read here
+## YOUR SETTINGS ARE READ HERE
 
 KEY_PRICE_THRESHOLD = float(env.get('KEY_PRICE_THRESHOLD'))
 THRESHOLD = float(env.get('TRANSFER_THRESHOLD'))
@@ -69,7 +69,7 @@ ft_contract = env.get('FRIEND_TECH_SHARES_CONTRACT')
 ft_contract_abi = env.get('FRIEND_TECH_SHARES_CONTRACT_ABI')
 ft_ctr = base.eth.contract(abi=ft_contract_abi, address=ft_contract)
 
-### Load databases ###
+### LOAD DATABASES ###
 
 dep_ft_db = pd.read_csv(DEPO_FT_DB)
 
